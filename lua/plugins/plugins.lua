@@ -5,11 +5,9 @@ return {
     opts = {
       servers = {
         clangd = {
-          opts = {
-            cmd = {
-              "clangd-16",
-              "--query-driver=/usr/bin/arm-none-eabi-*,/usr/bin/gcc-*,/usr/bin/avr*",
-            },
+          cmd = {
+            "clangd-16",
+            "--query-driver=/usr/bin/arm-none-eabi-*,/usr/bin/gcc-*,/usr/bin/avr*",
           },
         },
       },
