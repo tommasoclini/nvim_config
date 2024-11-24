@@ -10,8 +10,8 @@ return {
         clangd = {
           cmd = {
             "clangd",
-            "--query-driver=**"
-          }
+            "--query-driver=**",
+          },
         }
       else
         clangd = {
@@ -22,7 +22,7 @@ return {
         }
       end
       opts.servers = vim.tbl_extend("force", opts.servers or {}, {
-        clangd = clangd
+        clangd = clangd,
       })
     end,
   },
