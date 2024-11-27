@@ -6,7 +6,6 @@ return {
       local clangd
       local esp_idf_path = os.getenv("IDF_PATH")
       if esp_idf_path then
-        print("hello")
         clangd = {
           cmd = {
             "clangd",
