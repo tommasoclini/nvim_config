@@ -3,5 +3,6 @@
 -- Add any additional keymaps heredoc
 local map = vim.keymap.set
 
-map('n', '<C-p>', "<cmd>Telescope keymaps<CR>")
+-- new keymap needed
+-- map('n', '<C-p>', "<cmd>Telescope keymaps<CR>")
 
