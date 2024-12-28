@@ -1,5 +1,6 @@
 return {
   { "olimorris/onedarkpro.nvim" },
+  { "ellisonleao/gruvbox.nvim" },
   {
     "neovim/nvim-lspconfig",
     opts = function(_, opts)
@@ -9,8 +10,8 @@ return {
         clangd = {
           cmd = {
             "clangd",
-            "--query-driver=/home/tommaso/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/*," ..
-            "/home/tommaso/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/*",
+            "--query-driver=/home/tommaso/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/*,"
+              .. "/home/tommaso/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/*",
           },
         }
       else
