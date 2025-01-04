@@ -17,7 +17,7 @@ return {
       else
         clangd = {
           cmd = {
-            "clangd",
+            "clangd-19",
             "--query-driver=/usr/bin/arm-none-eabi-*,/usr/bin/gcc-*,/usr/bin/avr*",
           },
         }
