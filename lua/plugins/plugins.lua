@@ -1,6 +1,7 @@
 return {
   { "olimorris/onedarkpro.nvim" },
   { "ellisonleao/gruvbox.nvim" },
+  { "projekt0n/github-nvim-theme" },
   {
     "neovim/nvim-lspconfig",
     opts = function(_, opts)
