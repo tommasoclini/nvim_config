@@ -5,3 +5,4 @@ local map = vim.keymap.set
 
 -- new keymap needed
 -- map('n', '<C-p>', "<cmd>Telescope keymaps<CR>")
+-- map('n', '<leader>f', "<cmd>FzfLua files<CR>")
