@@ -20,9 +20,35 @@ return {
     },
   },
   {
-    "snacks.nvim",
+    "folke/snacks.nvim",
     opts = {
       scroll = { enabled = false },
+      picker = {
+        sources = {
+          explorer = {
+            layout = {
+              layout = {
+                width = 25,
+              },
+            },
+          },
+        },
+      },
     },
+  },
+  { "L3MON4D3/LuaSnip", enabled = false },
+  { "rafamadriz/friendly-snippets", enabled = false },
+  {
+    "hrsh7th/nvim-cmp",
+    opts = function(_, opts)
+      -- remove LuaSnip as a source from cmp
+      opts.sources = vim.tbl_filter(function(source)
+        return source.name ~= "luasnip"
+      end, opts.sources)
+      -- disable snippet expansion
+      opts.snippet = {
+        expand = function() end,
+      }
+    end,
   },
 }
