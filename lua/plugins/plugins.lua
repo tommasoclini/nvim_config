@@ -39,6 +39,12 @@ return {
   { "L3MON4D3/LuaSnip", enabled = false },
   { "rafamadriz/friendly-snippets", enabled = false },
   {
+    "m4xshen/hardtime.nvim",
+    lazy = false,
+    dependencies = { "MunifTanjim/nui.nvim" },
+    opts = {},
+  },
+  {
     "hrsh7th/nvim-cmp",
     opts = function(_, opts)
       -- remove LuaSnip as a source from cmp
