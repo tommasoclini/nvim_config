@@ -1,8 +1,8 @@
 return {
-  { "olimorris/onedarkpro.nvim" },
+  { "olimorris/onedarkpro.nvim", lazy = false },
   { "ellisonleao/gruvbox.nvim" },
   { "projekt0n/github-nvim-theme" },
-  {
+  --[[{
     "christoomey/vim-tmux-navigator",
     cmd = {
       "TmuxNavigateLeft",
@@ -18,11 +18,11 @@ return {
       { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
     },
-  },
+  },]]
   {
     "folke/snacks.nvim",
     opts = {
-      scroll = { enabled = false },
+      -- scroll = { enabled = false },
       picker = {
         sources = {
           explorer = {
@@ -38,12 +38,6 @@ return {
   },
   { "L3MON4D3/LuaSnip", enabled = false },
   { "rafamadriz/friendly-snippets", enabled = false },
-  {
-    "m4xshen/hardtime.nvim",
-    lazy = false,
-    dependencies = { "MunifTanjim/nui.nvim" },
-    opts = {},
-  },
   {
     "hrsh7th/nvim-cmp",
     opts = function(_, opts)
