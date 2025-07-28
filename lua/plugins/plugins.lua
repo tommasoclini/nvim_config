@@ -2,7 +2,7 @@ return {
   { "olimorris/onedarkpro.nvim", lazy = false },
   { "ellisonleao/gruvbox.nvim" },
   { "projekt0n/github-nvim-theme" },
-  ---[[
+  --[[
   {
     "christoomey/vim-tmux-navigator",
     cmd = {
@@ -52,7 +52,7 @@ return {
       clangd = {
         cmd = {
           "clangd-19",
-          "--query-driver=/usr/bin/arm-none-eabi-*,/usr/bin/gcc-*",
+          "--query-driver=/usr/bin/arm-none-eabi-*,/usr/bin/gcc*",
         },
       }
       --end
@@ -64,7 +64,7 @@ return {
   {
     "folke/snacks.nvim",
     opts = {
-      -- scroll = { enabled = false },
+      scroll = { enabled = false },
       image = { enabled = true },
       picker = {
         sources = {
